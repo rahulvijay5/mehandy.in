@@ -22,7 +22,9 @@ export default function StudentShowcase() {
             <div
               key={work.id}
               className="relative aspect-square cursor-pointer group"
-              onClick={() => setSelectedImage(work.id)}
+              onClick={() => {
+                setSelectedImage(work.id)
+              }}
             >
               <Image
                 src={work.src}
@@ -44,12 +46,14 @@ export default function StudentShowcase() {
             className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
             onClick={() => setSelectedImage(null)}
           >
-            <div className="relative w-full max-w-4xl aspect-square">
+            <div className="relative w-full max-w-4xl aspect-auto z-100 rounded-lg">
+
               <Image
-                src={`/student-work-${selectedImage}.avif`}
+                src={`/showcase/student-work-${selectedImage}.avif`}
                 alt={`Student Work ${selectedImage}`}
-                fill
-                className="object-contain"
+                height={1000}
+                width={1000}
+                className="object-contain w-full max-w-screen h-full rounded-lg"
                 quality={100}
               />
             </div>

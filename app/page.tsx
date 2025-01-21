@@ -69,7 +69,7 @@ export default function Home() {
 
           <div className="container-custom relative z-10">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="title-font text-6xl mb-6 text-[#FF4B91]">
+              <h1 className="title-font text-5xl sm:text-6xl mb-6 text-[#FF4B91]">
                 Mehandy.in
               </h1>
               <p className="text-3xl mb-8">Get Handy with Skills</p>
@@ -150,7 +150,7 @@ export default function Home() {
                 />
               </div>
               <div className="space-y-4 w-full">
-                {[1, 2, 3, 4, 5].map((lesson, index) => (
+                {["Detailed Knowledge","Every Topics Covered in Detail","Powder and Oil Measurement","Ingredients and their Uses","Preservatives uses in paste"].map((lesson, index) => (
                   <div
                     key={lesson}
                     className="bg-[#FFF6EA] p-6 rounded-lg shadow-md transform hover:scale-102 transition-all duration-300"
@@ -160,8 +160,8 @@ export default function Home() {
                       animationDelay: `${index * 100}ms`,
                     }}
                   >
-                    <h3 className="title-font text-2xl mb-2">Lesson {lesson}</h3>
-                    {/* <p className="text-gray-600">Coming soon...</p> */}
+                    <h3 className="title-font text-2xl">{lesson}</h3>
+
                   </div>
                 ))}
               </div>
