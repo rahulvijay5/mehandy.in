@@ -1,28 +1,30 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { trackAction } from '@/lib/analytics';
+import { trackAction } from "@/lib/analytics";
+import Link from "next/link";
 
 const features = [
   {
-    title: 'Learn Anywhere',
-    description: 'Access tutorials and courses on the go, perfect for busy schedules.',
-    icon: '📱',
+    title: "Learn Anywhere",
+    description:
+      "Access tutorials and courses on the go, perfect for busy schedules.",
+    icon: "📱",
   },
   {
-    title: 'Offline Access',
-    description: 'Download lessons to watch without internet connection.',
-    icon: '💾',
+    title: "Offline Access",
+    description: "Download lessons to watch without internet connection.",
+    icon: "💾",
   },
   {
-    title: 'Progress Tracking',
-    description: 'Monitor your learning journey and track completion.',
-    icon: '📊',
+    title: "Progress Tracking",
+    description: "Monitor your learning journey and track completion.",
+    icon: "📊",
   },
   {
-    title: 'Community Access',
-    description: 'Connect with fellow learners and share your work.',
-    icon: '👥',
+    title: "Community Access",
+    description: "Connect with fellow learners and share your work.",
+    icon: "👥",
   },
 ];
 
@@ -38,18 +40,28 @@ const AppPage = () => {
                 Learn Mehendi on Your Phone
               </h1>
               <p className="text-xl mb-8">
-                Download our mobile app to access courses, tutorials, and exclusive content anytime, anywhere.
+                Download our mobile app to access courses, tutorials, and
+                exclusive content anytime, anywhere.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button
-                  onClick={() => trackAction('Dandrd')}
-                  className="btn-primary flex items-center justify-center gap-2"
+                <Link
+                  href="https://play.google.com/store/apps/details?id=co.martin.nbxku"
+                  className=""
                 >
-                  <span className="text-2xl">🤖</span>
-                  Download for Android
-                </button>
+                  <button
+                    onClick={() => trackAction("Dandrd")}
+                    className="btn-primary flex items-center w-full justify-center gap-2"
+                  >
+                    <span className="text-2xl">🤖</span>
+                    Download for Android
+                  </button>
+                </Link>
                 <button
-                  onClick={() => trackAction('Dios')}
+
+                  onClick={() => {
+                    trackAction("Dios");
+                    alert("Contact us to get the iOS version.");
+                  }}
                   className="btn-secondary flex items-center justify-center gap-2"
                 >
                   <span className="text-2xl">🍎</span>
@@ -73,7 +85,9 @@ const AppPage = () => {
       {/* Features Section */}
       <section className="py-20">
         <div className="container-custom">
-          <h2 className="title-font text-4xl mb-12 text-center">App Features</h2>
+          <h2 className="title-font text-4xl mb-12 text-center">
+            App Features
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature) => (
               <div
@@ -93,18 +107,21 @@ const AppPage = () => {
       <section className="py-20 bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="title-font text-4xl mb-8">Beautiful & Easy to Use</h2>
+            <h2 className="title-font text-4xl mb-8">
+              Beautiful & Easy to Use
+            </h2>
             <p className="text-xl mb-12">
-              Our app is designed with you in mind. Simple, intuitive, and packed with features to enhance your learning experience.
+              Our app is designed with you in mind. Simple, intuitive, and
+              packed with features to enhance your learning experience.
             </p>
-            <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl">
+            {/* <div className="relative aspect-video w-full h-full rounded-xl overflow-hidden shadow-2xl">
               <Image
-                src="/app-preview.jpg"
+                src="/app.png"
                 alt="App Interface Preview"
                 fill
-                className="object-cover"
+                className="object-contain self-center"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -113,20 +130,28 @@ const AppPage = () => {
       <section className="py-20">
         <div className="container-custom">
           <div className="bg-[#FF4B91] text-white rounded-2xl p-12 text-center">
-            <h2 className="title-font text-4xl mb-6">Ready to Start Learning?</h2>
+            <h2 className="title-font text-4xl mb-6">
+              Ready to Start Learning?
+            </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Download our app now and join thousands of students mastering the art of Mehendi.
+              Download our app now and join thousands of students mastering the
+              art of Mehendi.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="https://play.google.com/store/apps/details?id=co.martin.nbxku">
+                <button
+                  onClick={() => trackAction("Dandrd")}
+                  className="bg-white w-full text-[#FF4B91] px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-200 flex items-center justify-center gap-2"
+                >
+                  <span className="text-2xl">🤖</span>
+                  Download for Android
+                </button>
+              </Link>
               <button
-                onClick={() => trackAction('Dandrd')}
-                className="bg-white text-[#FF4B91] px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-200 flex items-center justify-center gap-2"
-              >
-                <span className="text-2xl">🤖</span>
-                Download for Android
-              </button>
-              <button
-                onClick={() => trackAction('Dios')}
+                onClick={() => {
+                  trackAction("Dios");
+                  alert("Contact us to get the iOS version.");
+                }}
                 className="bg-white text-[#FF4B91] px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-200 flex items-center justify-center gap-2"
               >
                 <span className="text-2xl">🍎</span>
