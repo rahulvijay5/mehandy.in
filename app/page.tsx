@@ -267,6 +267,17 @@ export default function Home() {
               <p className="text-sm text-gray-600">
                 © {new Date().getFullYear()} Mehandy.in. All rights reserved.
               </p>
+              <div className="mt-4 flex flex-wrap gap-4">
+                <Link href="/tnc" className="text-sm text-gray-600 hover:text-[#FF4B91]">
+                  Terms &amp; Conditions
+                </Link>
+                <Link href="/privacy-policy" className="text-sm text-gray-600 hover:text-[#FF4B91]">
+                  Privacy Policy
+                </Link>
+                <Link href="/refunds" className="text-sm text-gray-600 hover:text-[#FF4B91]">
+                  Refund Policy
+                </Link>
+              </div>
             </div>
             <div>
               <h3 className="text-xl mb-4">Follow Us On</h3>
