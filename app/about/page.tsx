@@ -60,7 +60,7 @@ export default function AboutPage() {
               <div className="text-4xl text-[#FF4B91] mb-4">2025</div>
               <h3 className="text-xl font-semibold mb-4">Major Milestone</h3>
               <p className="text-gray-600">
-                Reached 550k+ Instagram followers and launched online courses to share knowledge with aspiring artists.
+                Reached 850k+ Instagram followers and launched online courses to share knowledge with aspiring artists.
               </p>
             </div>
           </div>
@@ -77,11 +77,11 @@ export default function AboutPage() {
               <ul className="space-y-4">
                 <li className="flex items-center gap-4">
                   <div className="w-2 h-2 bg-[#FF4B91] rounded-full"></div>
-                  <span>550,000+ Instagram Followers</span>
+                  <span>850,000+ Instagram Followers</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <div className="w-2 h-2 bg-[#FF4B91] rounded-full"></div>
-                  <span>80,000+ YouTube Subscribers</span>
+                  <span>110,000+ YouTube Subscribers</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <div className="w-2 h-2 bg-[#FF4B91] rounded-full"></div>

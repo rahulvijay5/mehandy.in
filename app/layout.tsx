@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mehandy.in - Get Handy with Skills",
-  description: "Learn Mehendi from Tanisha Vijay, a renowned artist with 550k+ Instagram followers. Join our courses and master the art of Mehendi.",
+  description: "Learn Mehendi from Tanisha Vijay, a renowned artist with 850k+ Instagram followers. Join our courses and master the art of Mehendi.",
 };
 
 export default function RootLayout({

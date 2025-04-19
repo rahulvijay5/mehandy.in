@@ -18,7 +18,7 @@ const defaultKeywords = [
   'Indian mehendi',
 ];
 
-const defaultDescription = 'Learn Mehendi from Tanisha Vijay, a renowned artist with 550k+ Instagram followers. Join our courses and master the art of Mehendi. Professional online courses, expert tutorials, and a supportive community.';
+const defaultDescription = 'Learn Mehendi from Tanisha Vijay, a renowned artist with 850k+ Instagram followers. Join our courses and master the art of Mehendi. Professional online courses, expert tutorials, and a supportive community.';
 
 export const defaultMetadata: Metadata = {
   title: {

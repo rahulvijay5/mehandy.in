@@ -25,8 +25,8 @@ export default function HeroSection() {
           </h1>
           <p className="text-3xl mb-8">Get Handy with Skills</p>
           <p className="text-xl mb-10 leading-relaxed">
-            Meet <Link href="/about" className="text-[#FF4B91]">Tanisha Vijay</Link>, a renowned Mehendi artist with over 550k+
-            Instagram followers and 80k+ YouTube subscribers. Awarded by
+            Meet <Link href="/about" className="text-[#FF4B91]">Tanisha Vijay</Link>, a renowned Mehendi artist with over 850k+
+            Instagram followers and 110k+ YouTube subscribers. Awarded by
             Skillshare for excellence in teaching.
           </p>
           <DownloadButton />

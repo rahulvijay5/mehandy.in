@@ -74,8 +74,8 @@ export default function Home() {
               </h1>
               <p className="text-3xl mb-8">Get Handy with Skills</p>
               <p className="text-xl mb-10 leading-relaxed">
-                Meet <Link href="/about" className="text-[#FF4B91]">Tanisha Vijay</Link>, a renowned Mehendi artist with over 550k+
-                Instagram followers and 80k+ YouTube subscribers. Awarded by
+                Meet <Link href="/about" className="text-[#FF4B91]">Tanisha Vijay</Link>, a renowned Mehendi artist with over 850k+
+                Instagram followers and 110k+ YouTube subscribers. Awarded by
                 Skillshare for excellence in teaching.
               </p>
               <Link href="https://play.google.com/store/apps/details?id=co.martin.nbxku" className="">
@@ -100,7 +100,7 @@ export default function Home() {
               <Link href="https://www.instagram.com/tanisha_mehandi_tutorial/" className="p-6 bg-[#FFF6EA] rounded-lg flex items-center justify-center hover:shadow-xl transition-colors gap-4 md:flex-col">
                 <InstagramIcon className="w-10 h-10" />
                 <h3 className="title-font text-4xl text-[#FF4B91] flex items-center justify-center">
-                  <span className="text-5xl font-extrabold">550</span>
+                  <span className="text-5xl font-extrabold">850</span>
                   <span>k+</span>
                 </h3>
                 <p className="text-lg">Instagram Followers</p>
@@ -123,7 +123,7 @@ export default function Home() {
               <Link href="https://www.youtube.com/@tanisha.mehandi.tutorial" className="p-6 hover:shadow-xl bg-[#FFF6EA] rounded-lg flex items-center justify-center gap-4 md:flex-col">
                 <YoutubeIcon className="w-10 h-10" />
                 <h3 className="title-font text-4xl text-[#FF4B91] flex items-center justify-center">
-                  <span className="text-5xl font-extrabold">80</span>
+                  <span className="text-5xl font-extrabold">110</span>
                   <span>k+</span>
                 </h3>
                 <p className="text-lg">YouTube Subscribers</p>

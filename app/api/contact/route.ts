@@ -33,7 +33,7 @@ const sendToTelegram = async (message: string) => {
 
 export async function POST(request: Request) {
   try {
-    const { name, phone, message } = await request.json();
+    const { name, phone, message, address } = await request.json();
 
     // Basic validation
     if (!name || !phone) {
@@ -49,6 +49,7 @@ await prisma.waitlist.create({
         name,
         phone,
         message,
+        address
       },
     });
 
@@ -59,6 +60,7 @@ await prisma.waitlist.create({
 Name: ${name}
 Phone: ${phone}
 ${message ? `\nMessage: ${message}` : ''}
+${address ? `\nAddress: ${address}` : ''}
     `.trim();
 
     // Send to Telegram

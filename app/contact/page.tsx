@@ -9,6 +9,7 @@ export default function ContactPage() {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [address, setAddress] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -22,7 +23,7 @@ export default function ContactPage() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, phone, message }),
+        body: JSON.stringify({ name, phone, message, address }),
       });
 
       if (response.ok) {
@@ -30,6 +31,7 @@ export default function ContactPage() {
         setName('');
         setPhone('');
         setMessage('');
+        setAddress('');
       } else {
         alert('Failed to send message. Please try again.');
       }
@@ -44,11 +46,11 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[#FFF6EA]">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-[#FFF6EA]">
+      <section className="py-12 bg-gradient-to-b from-white to-[#FFF6EA]">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center">
             <h1 className="title-font text-5xl mb-6 text-[#FF4B91]">Get in Touch</h1>
-            <p className="text-xl mb-8">
+            <p className="text-xl">
               Have questions about our courses or want to collaborate? We&apos;d love to hear from you!
             </p>
           </div>
@@ -56,7 +58,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20">
+      <section className="py-10">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="bg-white p-8 rounded-xl shadow-lg">
@@ -70,6 +72,7 @@ export default function ContactPage() {
                     type="text"
                     id="name"
                     value={name}
+                    placeholder='Tanisha Vijay'
                     onChange={(e) => setName(e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF4B91]"
                     required
@@ -77,15 +80,29 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                    Phone Number
+                    Phone Number or Email
                   </label>
                   <input
                     type="tel"
                     id="phone"
                     value={phone}
+                    placeholder='9229339498 / tanisha@mehandy.in'
                     onChange={(e) => setPhone(e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF4B91]"
                     required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-1">
+                    Address 
+                  </label>
+                  <textarea
+                    id="address"
+                    value={address}
+                    placeholder="324, Vijay's House, New Market, Jaipur"
+                    onChange={(e) => setAddress(e.target.value)}
+                    rows={2}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF4B91]"
                   />
                 </div>
                 <div>
@@ -95,6 +112,7 @@ export default function ContactPage() {
                   <textarea
                     id="message"
                     value={message}
+                    placeholder='Hi Tanisha, I wanted to know about your bridal course that ...'
                     onChange={(e) => setMessage(e.target.value)}
                     rows={4}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF4B91]"
