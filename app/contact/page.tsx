@@ -61,6 +61,58 @@ export default function ContactPage() {
       <section className="py-10">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 items-start">
+
+          <div className="space-y-8">
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <h2 className="title-font text-3xl mb-6">Connect with Us</h2>
+                <div className="space-y-4">
+                  <Link
+                    href="https://www.instagram.com/tanisha_mehandi_tutorial/"
+                    target="_blank"
+                    className="flex items-center gap-4 text-gray-600 hover:text-[#FF4B91] transition-colors"
+                  >
+                    <InstagramIcon className="w-6 h-6" />
+                    <span>@tanisha_mehandi_tutorial</span>
+                  </Link>
+                  <Link
+                    href="https://www.youtube.com/@tanisha.mehandi.tutorial"
+                    target="_blank"
+                    className="flex items-center gap-4 text-gray-600 hover:text-[#FF4B91] transition-colors"
+                  >
+                    <YoutubeIcon className="w-6 h-6" />
+                    <span>Tanisha Mehandi Tutorial</span>
+                  </Link>
+                  <Link
+                    href="https://whatsapp.com/channel/0029VaSBk0W6GcGCphZqH53S"
+                    target="_blank"
+                    className="flex items-center gap-4 text-gray-600 hover:text-[#FF4B91] transition-colors"
+                  >
+                    <WhatsAppIcon className="w-6 h-6" />
+                    <span>WhatsApp Channel</span>
+                  </Link>
+                  <Link
+                    href="https://t.me/tanishamehanditutorial"
+                    target="_blank"
+                    className="flex items-center gap-4 text-gray-600 hover:text-[#FF4B91] transition-colors"
+                  >
+                    <TelegramIcon className="w-6 h-6" />
+                    <span>Telegram Channel</span>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <h2 className="title-font text-3xl mb-6">Business Hours</h2>
+                <div className="space-y-2 text-gray-600">
+                  <p>Monday - Saturday</p>
+                  <p className="font-semibold">10:00 AM - 7:00 PM (IST)</p>
+                  <p className="mt-4 text-sm">
+                    We typically respond within 24 hours during business hours.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <h2 className="title-font text-3xl mb-6">Send us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -128,56 +180,7 @@ export default function ContactPage() {
               </form>
             </div>
 
-            <div className="space-y-8">
-              <div className="bg-white p-8 rounded-xl shadow-lg">
-                <h2 className="title-font text-3xl mb-6">Connect with Us</h2>
-                <div className="space-y-4">
-                  <Link
-                    href="https://www.instagram.com/tanisha_mehandi_tutorial/"
-                    target="_blank"
-                    className="flex items-center gap-4 text-gray-600 hover:text-[#FF4B91] transition-colors"
-                  >
-                    <InstagramIcon className="w-6 h-6" />
-                    <span>@tanisha_mehandi_tutorial</span>
-                  </Link>
-                  <Link
-                    href="https://www.youtube.com/@tanisha.mehandi.tutorial"
-                    target="_blank"
-                    className="flex items-center gap-4 text-gray-600 hover:text-[#FF4B91] transition-colors"
-                  >
-                    <YoutubeIcon className="w-6 h-6" />
-                    <span>Tanisha Mehandi Tutorial</span>
-                  </Link>
-                  <Link
-                    href="https://whatsapp.com/channel/0029VaSBk0W6GcGCphZqH53S"
-                    target="_blank"
-                    className="flex items-center gap-4 text-gray-600 hover:text-[#FF4B91] transition-colors"
-                  >
-                    <WhatsAppIcon className="w-6 h-6" />
-                    <span>WhatsApp Channel</span>
-                  </Link>
-                  <Link
-                    href="https://t.me/tanishamehanditutorial"
-                    target="_blank"
-                    className="flex items-center gap-4 text-gray-600 hover:text-[#FF4B91] transition-colors"
-                  >
-                    <TelegramIcon className="w-6 h-6" />
-                    <span>Telegram Channel</span>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="bg-white p-8 rounded-xl shadow-lg">
-                <h2 className="title-font text-3xl mb-6">Business Hours</h2>
-                <div className="space-y-2 text-gray-600">
-                  <p>Monday - Saturday</p>
-                  <p className="font-semibold">10:00 AM - 7:00 PM (IST)</p>
-                  <p className="mt-4 text-sm">
-                    We typically respond within 24 hours during business hours.
-                  </p>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
